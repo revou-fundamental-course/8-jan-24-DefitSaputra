@@ -1,6 +1,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+    background-image: url('/8-jan-24-DefitSaputra/assets/backgroundMath.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}    
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 header {
@@ -10,17 +27,22 @@ header {
 header h1 {
     color: white;
     background-color: #336699;
-    padding: 30px 30px;
+    padding: 20px;
+    margin: 0;
 }
 
 .form1 {
     background-color: white;
-    border: black;
-    padding-bottom: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
 }
 
 header h2 {
-    margin-top: 32px;
+    margin-top: 20px;
     color: #176B87;
 }
 
@@ -31,8 +53,68 @@ header p {
     margin-bottom: 20px;
 }
 
+.selectButton {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 #PersegiButton {
+    width: 100%;
+}
+
+#PersegiPanjangButton {
+    width: 100%;
+}
+
+.form2 {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#luasPersegi {
+    color: white;
     background-color: #336699;
+    padding: 20px;
+    margin: 0;
+}
+
+#luasPersegi1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#dimana1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#luas1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#sisi1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+#resetButtonLuas {
+    background-color: goldenrod;
     color: white;
     border: none;
     border-radius: 8px;
@@ -40,22 +122,20 @@ header p {
     cursor: pointer;
 }
 
-.inputSection {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    line-height: 3.0;
+#resetButtonLuas:hover {
+    background-color: darkorange;
 }
 
-#squareSide {
-    outline: none;
-    border-radius: 8px;
-    border: solid #176B87;
-    padding: 10px;
+#resetButtonLuas:active {
+    background-color: gold;
+    transform: translateY(2px);
 }
 
-#squareSide:focus {
-    border: solid #336699;
+#hasilLuasPersegi {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
 }
 
 button {
@@ -67,11 +147,121 @@ button {
     cursor: pointer;
 }
 
+#hitungLuas {
+    color: black;
+    background-color: white;
+}
+
 button:hover {
-    background-color: #176B87;
+    background-color: blue;
 }
 
 button:active {
     background-color: darkcyan;
     transform: translateY(2px);
+}
+
+.inputSectionLuas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#squareSideLuas {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSideLuas:focus {
+    border: 1px solid #336699;
+}
+
+.form3 {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#kelilingPersegi {
+    color: white;
+    background-color: #336699;
+    padding: 20px;
+    margin: 0;
+}
+
+#kelilingPersegi2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#dimana2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#keliling2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#sisi2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#hitungKeliling {
+    color: black;
+    background-color: white;
+}
+
+#squareSideKeliling {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSideKeliling:focus {
+    border: 1px solid #336699;
+}
+
+.inputSectionKeliling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#resetButtonKeliling {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#resetButtonKeliling:hover {
+    background-color: darkorange;
+}
+
+#resetButtonKeliling:active {
+    background-color: gold;
+    transform: translateY(2px);
+}
+
+#hasilKelilingPersegi {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
 }

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Website Kalkuator Matematik (Persegi)</title>
+    <link rel="stylesheet" href="/8-jan-24-DefitSaputra/css/style.css">
+    <title>Website Kalkulator Matematik (Persegi)</title>
 </head>
 <body>
-    <header>
-        <h1>Katik Kalkuator Matematik</h1>
+    
+<header>
+        <h1>Katik Kalkulator Matematik</h1>
+
+        <br> <br>
 
         <div class="form1">
             <h2>Welcome To Katik!</h2>
@@ -16,20 +19,77 @@
             <p>Sebuah Web Apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
 
             <div class="selectButton">
-                <button1 id="PersegiButton">Persegi</button1>
-                <button1 id="PersegiPanjangButton">Persegi Panjang</button1>
-
-            <div class="inputSection">
-                <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
-                <input type="number" id="squareSide">
+                <button id="PersegiButton">Persegi</button>
+                <button id="PersegiPanjangButton">Persegi Panjang</button>
             </div>
+
+            <br> <br>
+        
+        <div class="form2">    
+            <h1 id="luasPersegi">Luas Persegi</h1>
+            <br> <br>
+            <img src="/8-jan-24-DefitSaputra/assets/persegi.PNG">
+            <br> <br>
+            <p id="luasPersegi1"> Luas Persegi yaitu :</p>
+            <p>L = S x S</p>
+            <p id="dimana1">Di mana :</p>
+            <p id="luas1">L = Luas</p>
+            <p id="sisi1">S = Sisi</p>
+            </div>
+            
+            <br> <br>
+            <hr> 
+
+           <div class="inputSectionLuas">
+                <h1 id="hitungLuas">Hitung Luas Persegi</h1>
+                <label for="squareSideLuas"></label>
+                <input type="number" id="squareSideLuas">
+            </div>
+
+            <br>
+
+            <p id="hasilLuasPersegi"></p>
     
             <div class="buttons">
-                <button id="countButton">Hitung</button>
-                <button id="resetButton">Reset</button>
+                <button id="countButtonLuas">Hitung</button>
+                <button id="resetButtonLuas">Reset</button>
             </div>
+
+            <br> <br> <br> <br>
+            <br> <br> <br> <br>
+
+            <div class="form3">    
+                <h1 id="kelilingPersegi">Keliling Persegi</h1>
+                <br> <br>
+                <img src="/8-jan-24-DefitSaputra/assets/persegi.PNG">
+                <br> <br>
+                <p id="kelilingPersegi2"> Keliling Persegi yaitu :</p>
+                <p>K = 4 x S</p>
+                <p id="dimana2">Di mana :</p>
+                <p id="keliling2">K = Keliling</p>
+                <p id="sisi2">S = Sisi</p>
+                </div>
+
+                <br> <br>
+                <hr>
+
+                <div class="inputSectionKeliling">
+                    <h1 id="hitungKeliling">Hitung Keliling Persegi</h1>
+                    <label for="squareSideKeliling"></label>
+                    <input type="number" id="squareSideKeliling">
+                </div>
+
+                <br>
+
+                <p id="hasilKelilingPersegi"></p>
+        
+                <div class="buttons">
+                    <button id="countButtonKeliling">Hitung</button>
+                    <button id="resetButtonKeliling">Reset</button>
+                </div>
+
         </div>
     </header>
-
+    <script src="/8-jan-24-DefitSaputra/js/script.js"></script>
 </body>
 </html>
