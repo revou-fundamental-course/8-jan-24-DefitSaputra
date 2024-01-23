@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Temukan tombol-tombol yang diperlukan
+    var persegiButton = document.getElementById("PersegiButton");
+    var persegiPanjangButton = document.getElementById("PersegiPanjangButton");
+
+    // Tambahkan event listener untuk setiap tombol
+    persegiButton.addEventListener("click", function () {
+        // Pindah ke halaman Persegi
+        window.location.href = "/8-jan-24-DefitSaputra/index.html";
+    });
+
+    persegiPanjangButton.addEventListener("click", function () {
+        // Pindah ke halaman Persegi Panjang
+        window.location.href = "/8-jan-24-DefitSaputra/index2.html";
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     //Event listener untuk tombol "Hitung Luas Persegi"
     document.getElementById('countButtonLuas').addEventListener('click', function () {
