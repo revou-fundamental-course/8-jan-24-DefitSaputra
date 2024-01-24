@@ -80,7 +80,7 @@ header p {
 }
 
 .form2 img {
-    max-width: 50%; 
+    max-width: 40%; 
     height: auto;
 }
 
@@ -197,7 +197,7 @@ button:active {
 }
 
 .form3 img {
-    max-width: 50%; 
+    max-width: 40%; 
     height: auto;
 }
 
@@ -276,4 +276,27 @@ button:active {
     color: black;
     font-weight: bold;
     font-size: medium;
+}
+
+/* Misalnya, di dalam file style.css */
+
+/* Gaya untuk tampilan umum di sini */
+
+@media only screen and (max-width: 600px) {
+    .form2 img,
+    .form3 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Contoh penyesuaian navigasi responsif */
+    .selectButton {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Tambahan penyesuaian font responsif */
+    body {
+        font-size: 16px;
+    }
 }

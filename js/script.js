@@ -58,3 +58,55 @@ document.getElementById('resetButtonKeliling').addEventListener('click', functio
 });
 
 });
+
+// Halaman kedua untuk menghitung Luas Persegi Panjang dan Keliling Persegi Panjang
+document.addEventListener("DOMContentLoaded", function () {
+//Event listener untuk tombol "Hitung Luas Persegi Panjang"
+document.getElementById('countButtonLuas').addEventListener('click', function () {
+    var panjangLuas = parseFloat(document.getElementById('squareSidePanjang').value);
+    var lebarLuas = parseFloat(document.getElementById('squareSideLebar').value);
+
+    if (!isNaN(panjangLuas) && !isNaN(lebarLuas)) {
+        var luas = panjangLuas * lebarLuas;
+
+        //Menampilkan hasil Luas Persegi
+        document.getElementById('hasilLuasPersegiPanjang').innerText = "Luas = P x L \nLuas = " + panjangLuas + " x " + lebarLuas + "\nLuas = " + luas;
+
+    } else {
+        alert("Masukkan angka yang valid!");
+    }
+});
+ 
+//Event listener untuk tombol "Hitung Keliling Persegi Panjang"
+document.getElementById('countButtonKeliling').addEventListener('click', function () {
+    var panjangKeliling = parseFloat(document.getElementById('squareSidePanjang2').value);
+    var lebarKeliling = parseFloat(document.getElementById('squareSideLebar2').value);
+
+    if (!isNaN(panjangKeliling) && !isNaN(lebarKeliling)) {
+        var keliling = 2 * (panjangKeliling + lebarKeliling);
+
+        //Menampilkan hasil Luas Persegi
+        document.getElementById('hasilKelilingPersegiPanjang').innerText = "Keliling = 2 x (P + L) \nKeliling = 2 x (" + panjangKeliling + " + " + lebarKeliling + ")\nKeliling = " + keliling;
+
+    } else {
+        alert("Masukkan angka yang valid!");
+    }
+});
+ 
+// Event listener untuk tombol Reset Luas Persegi Panjang
+    document.getElementById('resetButtonLuas').addEventListener('click', function () {
+    document.getElementById('squareSidePanjang').value = '';
+    document.getElementById('squareSideLebar').value = '';
+    document.getElementById('hasilLuasPersegiPanjang').innerText = '';
+});
+
+//Event listener untuk tombol Reset Keliling Persegi Panjang
+    document.getElementById('resetButtonKeliling').addEventListener('click', function () {
+    document.getElementById('squareSidePanjang2').value = '';
+    document.getElementById('squareSideLebar2').value = '';
+    document.getElementById('hasilKelilingPersegiPanjang').innerText = '';
+});
+
+});
+
+
