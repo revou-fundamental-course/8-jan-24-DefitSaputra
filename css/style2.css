@@ -84,15 +84,14 @@ header p {
     height: auto;
 }
 
-
-#luasPersegi {
+#luasPersegiPanjang {
     color: white;
     background-color: #336699;
     padding: 20px;
     margin: 0;
 }
 
-#luasPersegi1 {
+#luasPersegiPanjang1 {
     text-align: left;
     font-weight: bold;
 }
@@ -102,12 +101,12 @@ header p {
     font-weight: bold;
 }
 
-#luas1 {
+#panjang1 {
     text-align: left;
     font-weight: bold;
 }
 
-#sisi1 {
+#lebar1 {
     text-align: left;
     font-weight: bold;
 }
@@ -117,6 +116,68 @@ hr {
     height: 1px;
     background-color: black;
     margin: 20px 0;
+}
+
+.inputSectionLuas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#hitungLuasPersegiPanjang {
+    color: black;
+    background-color: white;
+}
+
+
+#squareSidePanjang {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSidePanjang:focus {
+    border: 1px solid #336699;
+}
+
+#squareSideLebar {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSideLebar:focus {
+    border: 1px solid #336699;
+}
+
+#hasilLuasPersegiPanjang {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button {
+    background-color: #336699;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: darkcyan;
+    transform: translateY(2px);
 }
 
 #resetButtonLuas {
@@ -137,55 +198,6 @@ hr {
     transform: translateY(2px);
 }
 
-#hasilLuasPersegi {
-    text-align: left;
-    color: black;
-    font-weight: bold;
-    font-size: medium;
-}
-
-button {
-    background-color: #336699;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#hitungLuas {
-    color: black;
-    background-color: white;
-}
-
-button:hover {
-    background-color: blue;
-}
-
-button:active {
-    background-color: darkcyan;
-    transform: translateY(2px);
-}
-
-.inputSectionLuas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#squareSideLuas {
-    outline: none;
-    border-radius: 8px;
-    border: 1px solid #176B87;
-    padding: 10px;
-    width: 100%;
-}
-
-#squareSideLuas:focus {
-    border: 1px solid #336699;
-}
-
 .form3 {
     background-color: white;
     border: 1px solid black;
@@ -198,18 +210,17 @@ button:active {
 
 .form3 img {
     max-width: 50%; 
-    height: auto;
+    height: auto;    
 }
 
-
-#kelilingPersegi {
+#kelilingPersegiPanjang {
     color: white;
     background-color: #336699;
     padding: 20px;
     margin: 0;
 }
 
-#kelilingPersegi2 {
+#kelilingPersegiPanjang2 {
     text-align: left;
     font-weight: bold;
 }
@@ -219,31 +230,14 @@ button:active {
     font-weight: bold;
 }
 
-#keliling2 {
+#panjang2 {
     text-align: left;
     font-weight: bold;
 }
 
-#sisi2 {
+#lebar2 {
     text-align: left;
     font-weight: bold;
-}
-
-#hitungKeliling {
-    color: black;
-    background-color: white;
-}
-
-#squareSideKeliling {
-    outline: none;
-    border-radius: 8px;
-    border: 1px solid #176B87;
-    padding: 10px;
-    width: 100%;
-}
-
-#squareSideKeliling:focus {
-    border: 1px solid #336699;
 }
 
 .inputSectionKeliling {
@@ -251,6 +245,42 @@ button:active {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+}
+
+#hitungKeliling {
+    color: black;
+    background-color: white;
+}
+
+#squareSidePanjang2 {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSidePanjang2:focus {
+    border: 1px solid #336699;
+}
+
+#squareSideLebar2 {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #176B87;
+    padding: 10px;
+    width: 100%;
+}
+
+#squareSideLebar2:focus {
+    border: 1px solid #336699;
+}
+
+#hasilKelilingPersegiPanjang {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
 }
 
 #resetButtonKeliling {
@@ -271,9 +301,10 @@ button:active {
     transform: translateY(2px);
 }
 
-#hasilKelilingPersegi {
-    text-align: left;
-    color: black;
-    font-weight: bold;
-    font-size: medium;
-}
+
+
+
+
+
+
+
